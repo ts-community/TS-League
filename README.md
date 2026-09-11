@@ -74,12 +74,6 @@ src/
 
 La arquitectura separa la lógica de negocio, configuración, componentes de Discord, servicios y recursos gráficos para facilitar el mantenimiento y la ampliación del sistema.
 
-## 📌 Estado
-
-🟡 **Proyecto en pausa**
-
-El proyecto fue desarrollado para gestionar una liga competitiva de Brawl Stars dentro de TSCommunity.
-
 ## 🌐 Comunidad
 
-El sistema fue desarrollado específicamente para [TSCommunity](https://discord.gg/8nu3ZdDkp7), donde se gestiona la liga y se ofrece soporte a sus participantes.
+El sistema fue desarrollado específicamente para el servidor de Discord TS Community Brawl, donde se gestiona la liga y se ofrece soporte a sus participantes.
