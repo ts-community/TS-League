@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "dryRun": true,
+  "dryRun": false,
   "mergeMethod": "squash",
   "deleteBranch": false,
   "requireCodeRabbit": true,
