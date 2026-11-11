@@ -27,8 +27,8 @@ importers:
         specifier: ^3.7.1
         version: 3.7.2
       mongoose:
-        specifier: ^6.4.6
-        version: 6.13.8
+        specifier: ^6.13.12
+        version: 6.13.12
       puppeteer:
         specifier: ^24.29.1
         version: 24.29.1
@@ -475,6 +475,9 @@ packages:
   '@smithy/smithy-client@4.7.0':
     resolution: {integrity: sha512-3BDx/aCCPf+kkinYf5QQhdQ9UAGihgOVqI3QO5xQfSaIWvUE4KYLtiGRWsNe1SR7ijXC0QEPqofVp5Sb0zC8xQ==}
     engines: {node: '>=18.0.0'}
+    deprecated: |-
+      Deprecated due to a bug in custom logger data redaction. Upgrade to the latest version. If you used a custom logger with
+        this version, review your logs and rotate any credentials or other secrets. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/types@4.6.0':
     resolution: {integrity: sha512-4lI9C8NzRPOv66FaY1LL1O/0v0aLVrq/mXP/keUa9mJOApEeae43LsLd2kZRUJw91gxOQfLIrV3OvqPgWz1YsA==}
@@ -1014,16 +1017,16 @@ packages:
     resolution: {integrity: sha512-mLV7SEiov2LHleRJPMPrK2PMyhXFZt2UQLC4VD4pnth3jMjYKHhtqfwwkkvS/NXuo/Fp3vbhaNcXrIDaLRb9Tg==}
     engines: {node: '>=12.9.0'}
 
-  mongoose@6.13.8:
-    resolution: {integrity: sha512-JHKco/533CyVrqCbyQsnqMpLn8ZCiKrPDTd2mvo2W7ygIvhygWjX2wj+RPjn6upZZgw0jC6U51RD7kUsyK8NBg==}
+  mongoose@6.13.12:
+    resolution: {integrity: sha512-VljZzIHa///LQAwM15y8V3lgpi2+/+AcLmjb98Dsyxe3sCF0yxb3i+10+rxS5Z0QzVM2/p7ibNITfjnQP47Azw==}
     engines: {node: '>=12.0.0'}
 
   mpath@0.9.0:
     resolution: {integrity: sha512-ikJRQTk8hw5DEoFVxHG1Gn9T/xcjtdnOKIU1JTmGjZZlg9LST2mBLmcX3/ICIbgJydT2GOc15RnNy5mHmzfSew==}
     engines: {node: '>=4.0.0'}
 
-  mquery@4.0.3:
-    resolution: {integrity: sha512-J5heI+P08I6VJ2Ky3+33IpCdAvlYGTSUjwTPxkAr8i8EoduPMBX2OY/wa3IKZIQl7MU4SbFk8ndgSKyB/cl1zA==}
+  mquery@4.0.4:
+    resolution: {integrity: sha512-L98XAumGC8qNT/YgxIvlvvMwxW1ZmbFA9RAlNCVF08iouv2ebWoV1Pyo9tQEMInHHxbW0BQ9GfxEjyDd4v/Uww==}
     engines: {node: '>=12.0.0'}
 
   ms@2.1.3:
@@ -2665,13 +2668,13 @@ snapshots:
     transitivePeerDependencies:
       - aws-crt
 
-  mongoose@6.13.8:
+  mongoose@6.13.12:
     dependencies:
       bson: 4.7.2
       kareem: 2.5.1
       mongodb: 4.17.2
       mpath: 0.9.0
-      mquery: 4.0.3
+      mquery: 4.0.4
       ms: 2.1.3
       sift: 16.0.1
     transitivePeerDependencies:
@@ -2680,7 +2683,7 @@ snapshots:
 
   mpath@0.9.0: {}
 
-  mquery@4.0.3:
+  mquery@4.0.4:
     dependencies:
       debug: 4.4.3
     transitivePeerDependencies:
